@@ -1,0 +1,32 @@
+name: Update FX rates
+
+on:
+  schedule:
+    # 09:00 UTC = 17:00 MYT。BNMの1130セッション公表後に取りに行く
+    - cron: '0 9 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fetch BNM rates
+        run: python scripts/fetch_rates.py
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain rates.json)" ]; then
+            git add rates.json
+            git commit -m "rates: $(python -c "import json;d=json.load(open('rates.json'));print(d.get('rate_date','?'), d.get('myr_to_jpy','?'))")"
+            git push
+          else
+            echo "no change"
+          fi
