@@ -2,9 +2,9 @@
   "source": "Bank Negara Malaysia (BNM) Open API",
   "source_url": "https://api.bnm.gov.my/public/exchange-rate?session=1130&quote=rm",
   "session": "1130",
-  "rate_date": "2026-09-18",
-  "bnm_last_updated": "2026-09-18 23:01:23",
-  "fetched_at_utc": "2026-09-20T13:24:22.838278+00:00",
+  "rate_date": "2026-09-21",
+  "bnm_last_updated": "2026-09-21 23:01:21",
+  "fetched_at_utc": "2026-09-21T15:35:13.134770+00:00",
   "stale": false,
   "myr_to_jpy": 38.2966,
   "jpy_per_100_myr": 3829.66,
@@ -91,6 +91,11 @@
     },
     {
       "date": "2026-09-18",
+      "myr_to_jpy": 38.2966,
+      "usd_to_myr": 4.0825
+    },
+    {
+      "date": "2026-09-21",
       "myr_to_jpy": 38.2966,
       "usd_to_myr": 4.0825
     }
