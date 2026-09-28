@@ -5,7 +5,7 @@
   "rate_date": "2026-09-25",
   "bnm_last_updated": "2026-09-25 23:01:25",
   "fetched_at_utc": "2026-09-27T14:31:08.686000+00:00",
-  "stale": false,
+  "stale": true,
   "myr_to_jpy": 39.0717,
   "jpy_per_100_myr": 3907.17,
   "raw": {
@@ -119,5 +119,7 @@
       "myr_to_jpy": 39.0717,
       "usd_to_myr": 4.0625
     }
-  ]
+  ],
+  "last_error": "URLError: <urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1010)>",
+  "last_attempt_utc": "2026-09-28T17:16:33.028250+00:00"
 }
