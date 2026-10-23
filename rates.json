@@ -2,27 +2,27 @@
   "source": "Bank Negara Malaysia (BNM) Open API",
   "source_url": "https://api.bnm.gov.my/public/exchange-rate?session=1130&quote=rm",
   "session": "1130",
-  "rate_date": "2026-10-22",
-  "bnm_last_updated": "2026-10-22 19:56:21",
-  "fetched_at_utc": "2026-10-22T14:17:32.855849+00:00",
+  "rate_date": "2026-10-23",
+  "bnm_last_updated": "2026-10-23 19:56:21",
+  "fetched_at_utc": "2026-10-23T14:00:38.923584+00:00",
   "stale": false,
-  "myr_to_jpy": 38.7627,
-  "jpy_per_100_myr": 3876.27,
+  "myr_to_jpy": 38.4793,
+  "jpy_per_100_myr": 3847.93,
   "raw": {
     "JPY": {
       "unit": 100,
-      "buying": 2.5573,
-      "selling": 2.6023
+      "buying": 2.5763,
+      "selling": 2.6213
     },
     "USD": {
       "unit": 1,
-      "buying": 4.065,
-      "selling": 4.09
+      "buying": 4.0675,
+      "selling": 4.0925
     }
   },
   "note": "中値（buying と selling の平均）で換算した参考値。実際の送金では銀行手数料とスプレッドが乗る。",
-  "usd_to_myr": 4.0775,
-  "usd_to_jpy": 158.05,
+  "usd_to_myr": 4.08,
+  "usd_to_jpy": 157.0,
   "history": [
     {
       "date": "2026-08-28",
@@ -183,6 +183,11 @@
       "date": "2026-10-22",
       "myr_to_jpy": 38.7627,
       "usd_to_myr": 4.0775
+    },
+    {
+      "date": "2026-10-23",
+      "myr_to_jpy": 38.4793,
+      "usd_to_myr": 4.08
     }
   ]
 }
