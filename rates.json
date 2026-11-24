@@ -5,7 +5,7 @@
   "rate_date": "2026-11-23",
   "bnm_last_updated": "2026-11-23 23:01:20",
   "fetched_at_utc": "2026-11-23T20:48:21.881384+00:00",
-  "stale": false,
+  "stale": true,
   "myr_to_jpy": 34.2067,
   "jpy_per_100_myr": 3420.67,
   "raw": {
@@ -289,5 +289,7 @@
       "myr_to_jpy": 34.2067,
       "usd_to_myr": 4.2005
     }
-  ]
+  ],
+  "last_error": "HTTPError: HTTP Error 429: Too Many Requests",
+  "last_attempt_utc": "2026-11-24T19:51:59.041623+00:00"
 }
